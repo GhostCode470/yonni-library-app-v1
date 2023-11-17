@@ -1,38 +1,124 @@
-.App {
-  text-align: center;
+/* 
+font-family: 'Merriweather', serif;
+font-family: 'Merriweather Sans', sans-serif;
+*/
+
+.labelColor{
+  color:rgba(103, 137, 125, 0.7)
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.background1{
+  background-color: rgb(235, 240, 238);
+  color:#121715;
+  font-family: 'Merriweather', serif;
+  height: 50rem;
+  padding: 8px;
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.background{
+  background-color: rgb(235, 240, 238);
+  color:#121715;
+  font-family: 'Merriweather', serif;
+  height: 50rem;
+  padding: 8px;
+  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h1{
+  background: linear-gradient(120deg,#b6c8c2,#67897d);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.App-link {
-  color: #61dafb;
+.YonniLogo{
+  height: 180px;
+  width: 180px;
+  animation: Yonni-Book-Logo-spin infinite 20s linear
 }
 
-@keyframes App-logo-spin {
+@keyframes Yonni-Book-Logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
+} 
+
+
+.BtnA{
+  color:#121715;
+  border: none;
+  background-color: #b6c8c2;
+  margin: 2px;
+}
+
+.BtnA:hover{
+  background-color: #67897d;
+  transition: 1s;
+}
+
+.BtnB{
+  border: none;
+  background-color: #67897d;
+  margin: 2px;
+}
+.BtnB:hover{
+  background-color: #121715;
+  color: #67897d;
+  transition: 1s;
+}
+
+.flexColumn{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.flex{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inputStyle{
+  margin-left: 3px;
+  margin-right: 5px;
+  border: 1px solid rgb(187, 187, 187)
+}
+
+@media (max-width:500px) {
+  .background{
+    display: flex;
+    flex-direction: column;
+    height: 100rem;
+  }
+  .addBook {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-bottom: 20px;
+  }
+}
+
+
+
+@media (min-width: 501px)  and (max-width: 915px) {
+  .background{
+    height: 70rem;
+}}
+
+@media (max-width:1048px){
+  .mainTitle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
 }
